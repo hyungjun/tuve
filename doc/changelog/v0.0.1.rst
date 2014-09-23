@@ -1,0 +1,5 @@
+v0.0.1
+======
+
+- [DOC] sphinx initialization #1
+- [META] add a proper .gitignore #3
