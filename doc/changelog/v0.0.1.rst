@@ -4,3 +4,4 @@ v0.0.1
 - [DOC] sphinx initialization #1
 - [META] add a proper .gitignore #3
 - [DOC] Read The Docs support #6
+- [CORE FRONTEND] front-end application support as a submodule #10
