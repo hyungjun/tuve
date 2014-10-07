@@ -23,7 +23,7 @@ for hops in pathmap:
     To._provide_hop(*hops)
 
 def imports(self, *names):
-    body = self.as_posix().partition('/tuve/')[2]
+    body = self.as_posix().rpartition('/tuve/')[2]
     if not body:
         raise ImportError('Attempting to import outside tuve !')
     import_path = '.'.join(['tuve'] + body.split('/') + list(names))
