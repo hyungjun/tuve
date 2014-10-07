@@ -1,6 +1,8 @@
+from __future__ import print_function
 import os
 from argparse import ArgumentParser, Namespace
 from argparse import RawTextHelpFormatter
+from tuve.version import LOGO
 from tuve.util.path import app_path
 from tuve.util.logging import colored, DEFAULT_LOGGER_NAME
 from tuve.mixin.introspective import Introspective
@@ -31,11 +33,14 @@ def env_fallback(self, key, env_key):
             setattr(self, key, val)
         else:
             self.l.warning('Option `%s` was not provided.' % key)
+def print_logo(self):
+    print(LOGO)
 
 Namespace.grace_update = grace_update
 Namespace.generic_main = generic_main
 Namespace.log_introspection = log_introspection
 Namespace.env_fallback = env_fallback
+Namespace.print_logo = print_logo
 Namespace._pad_items = func(Introspective._pad_items)
 Namespace.path = app_path
 Namespace.l = colored(DEFAULT_LOGGER_NAME)

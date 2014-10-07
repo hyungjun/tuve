@@ -27,6 +27,7 @@ def application(opt):
 def prepare(opt):
     opt.grace_update(DEFAULTS)
     opt.l.reset_level(opt.LOG_LEVEL)
+    opt.print_logo()
     opt.l.info('TUVE is serving in <%s> context at:', opt.context)
     opt.l.info(opt.path)
     opt.env_fallback('API_KEY', 'TUVE_API_KEY')

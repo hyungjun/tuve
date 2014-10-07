@@ -5,6 +5,8 @@ DEFAULTS.LOG_LEVEL = 30
 
 def main(opt):
     prepare(opt)
+    import ujson
+    from tornado import escape
     from tornado.ioloop import IOLoop
     from tornado.httpserver import HTTPServer
     from tornado.ioloop import IOLoop
