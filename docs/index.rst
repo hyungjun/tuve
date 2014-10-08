@@ -8,7 +8,7 @@ Welcome to TUVE's documentation!
 
 * What is TUVE ?
 
-  * Introdudction
+  * Introduction
   * 東京メトロ　10周年スペシャルサイト
 
 * For User
